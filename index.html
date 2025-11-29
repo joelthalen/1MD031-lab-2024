@@ -3,104 +3,100 @@
    <head>
        <title>Page title shown in window title</title>
        <meta charset="utf-8"/>
+       <link rel="stylesheet" type="text/css" href="/public/css/style.css">
    </head>
-   <body>
+    <body>
     <header>
+        <img src="/img/header.webp" alt="Header" title="Restaurant header">
         <h1>Välkommen till BurgerOnline</h1>
     </header>
-    <nav> Menu items </nav>
-        <main> 
-            <section>
-                <h2>Select burger</h2>
-                <p>Välj din burgare</p>
-                <div>
-                    <div style="display: inline-block"> 
-                        <h3>Dunder burgare</h3>
-                        <br>
-                        <img src="/img/burgare1.webp" alt="buragre 1" title="Burgare nummer 1" style="width: 300px;">
-                        <br>
-                        <ul>
-                            <li>Ost</li>
-                            <li>Kött</li>
-                            <li>Grönsaker</li>
-                            <li>Innehåller gluten</li>
-                        </ul>
-                    </div>
-                    <div style="display: inline-block"> 
-                        <h3>Bara kött</h3>
-                        <br>
-                        <img src="/img/burgarkött.jpg" alt="buragre 2" title="Burgare nummer 2" style="width: 300px;">
-                        <br>
-                        <ul>
-                            <li>Kött</li>
-                            <li>Fryst</li>
-                        </ul>
-                    </div>
-                    <div style="display: inline-block"> 
-                        <h3>Fisk burgare</h3>
-                        <br>
-                        <img src="/img/fiskburgare.jpg" alt="buragre 3" title="Burgare nummer 3" style="width: 300px;">
-                        <br>
-                        <ul>
-                            <li>Fisk</li>
-                            <li>Grönsaker</li>
-                            <li>Innehåller gluten</li>
-                        </ul>
-                    </div>
+    <main> 
+        <section id="burgerinformation">
+            <h2>Select burger</h2>
+            <p>Välj din burgare</p>
+            <div>
+                <div class="burgarblock" style="display: inline-block"> 
+                    <h3>Dunder burgare</h3>
+                    <br>
+                    <img src="/img/burgare1.webp" alt="buragre 1" title="Burgare nummer 1" style="width: 300px;">
+                    <br>
+                    <ul>
+                        <li>Ost</li>
+                        <li>Kött</li>
+                        <li>Grönsaker</li>
+                        <li class="allergen">Innehåller gluten</li>
+                    </ul>
                 </div>
-            </section>
-            <section>
-                <h2>Customer information</h2>
-            </section>
-            <section>
-                <h3>Delivery information</h3>
-                <p>
-                    <label for="name">Full name</label><br>
-                    <input type="text" id="name" name="fn" required="required" placeholder="First- and Last name">
-                </p>
-                <p>
-                    <label for="email">Email</label><br>
-                    <input type="email" id="email" name="em" required="required" placeholder="E-mail address">
-                </p>
-                <p>
-                    <label for="street">Street</label><br>
-                    <input type="text" id="street" name="sn" placeholder="Street name">
-                </p>
-                <p>
-                    <label for="house">House</label><br>
-                    <input type="number" id="house" name="hn" placeholder="House number">
-                </p>
-                <p>
-                    <label for="payment">Betalningsmetod</label><br>
-                    <select id="payment" name="paym">
-                        <option>Kort</option>
-                        <option>Swish</option>
-                        <option>Avbetalning</option>
-                        <option>Betala vid leverans</option>
-                    </select>
-                </p>
-                <p>
-                    <label for="gender">Välj kön:</label>
-                    <div>
-                        <input type="radio" id="alternativt" name="gen" checked="checked">
-                        <label for="alternativt">Vill inte ange</label>
-                    </div>
-                    <div>  
-                        <input type="radio" id="man" name="gen">
-                        <label for="man">Man</label>
-                    </div>
-                    <div>
-                        <input type="radio" id="kvinna" name="gen">
-                        <label for="kvinna">Kvinna</label>
-                    </div>
-                </p>
+                <div class="burgarblock" style="display: inline-block"> 
+                    <h3>Bara kött</h3><br>
+                    <img src="/img/burgarkött.jpg" alt="buragre 2" title="Burgare nummer 2" style="width: 300px;"><br>
+                    <ul>
+                        <li>Kött</li>
+                        <li>Fryst</li>
+                    </ul>
+                </div>
+                <div class="burgarblock" style="display: inline-block"> 
+                    <h3>Fisk burgare</h3><br>
+                    <img src="/img/fiskburgare.jpg" alt="buragre 3" title="Burgare nummer 3" style="width: 300px;"><br>
+                    <ul>
+                        <li>Fisk</li>
+                        <li>Grönsaker</li>
+                        <li class="allergen">Innehåller gluten</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="deliveryinformation">
+            <h2>Customer information</h2><br>
+
+            <h3>Delivery information</h3>
+            <p>
+                <label for="name">Full name</label><br>
+                <input type="text" id="name" name="fn" required="required" placeholder="First- and Last name">
+            </p>
+            <p>
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="em" required="required" placeholder="E-mail address">
+            </p>
+            <p>
+                <label for="street">Street</label><br>
+                <input type="text" id="street" name="sn" placeholder="Street name">
+            </p>
+            <p>
+                <label for="house">House</label><br>
+                <input type="number" id="house" name="hn" placeholder="House number">
+            </p>
+            <p>
+                <label for="payment">Betalningsmetod</label><br>
+                <select id="payment" name="paym">
+                    <option>Kort</option>
+                    <option>Swish</option>
+                    <option>Avbetalning</option>
+                    <option>Betala vid leverans</option>
+                </select>
+            </p>
+            <p>
+                <label for="gender">Välj kön:</label>
+                <div>
+                    <input type="radio" id="alternativt" name="gen" checked="checked">
+                    <label for="alternativt">Vill inte ange</label>
+                </div>
+                <div>  
+                     <input type="radio" id="man" name="gen">
+                     <label for="man">Man</label>
+                 </div>
+                 <div>
+                     <input type="radio" id="kvinna" name="gen">
+                     <label for="kvinna">Kvinna</label>
+                 </div>
+             </p>
                 
-            </section>
-            <button type="submit">
-                <img src="/img/order2.jpg" style="width: 70px;">
-                Lägg beställning
-            </button>
-        </main>
+        </section>
+        <button type="submit">
+            <img src="/img/order2.jpg" style="width: 70px;">
+            Lägg beställning
+         </button>
+    </main>
         <footer>
             <hr>
             &copy;
