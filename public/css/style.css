@@ -32,8 +32,11 @@ main {
 header {
     display: block;
     margin: 2vw;
-    height: 390px;
+    height: 450px;
     overflow: hidden;
+    background-image: url(C:\Users\joelt\Documents\1MD031-lab-2024\public\img\header.webp);
+    background-position: center;
+    background-size: cover;
 
 }
 
@@ -44,12 +47,13 @@ header img {
 }
 
 header h1 {
-    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width:40rem;
     margin: 0 auto;
-    text-align: center;
-    margin-top: -1;
     color: white;
+    
 }
 
 nav ul {
@@ -88,10 +92,26 @@ button:hover, input[type="radio"] {
     cursor: pointer;
 }
 
-.burgarblock {
-    margin: 10px;
+.wrapper {
+    display: grid;
+    grid-gap: 100px;
+    grid-template-columns: 300px 300px 300px;
 }
 
+ .box {
+     background-color: #444;
+     color: #fff;
+     border-radius: 5px;
+     padding: 20px;
+     font-size: 100%;
+     width: 340px;
+ }
+
+
+.wrapper img {
+    width: 300px;
+    height: 250px;
+}
 
 
 button {
