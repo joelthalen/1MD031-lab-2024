@@ -56,7 +56,7 @@ header h1 {
     
 }
 
-nav ul {
+/*nav ul {
     display: grid;
     grid-template-columns: repeat(auto-fill, 9.25em);
     gap: 1em;
@@ -76,7 +76,7 @@ nav li {
 .Master {
     color: green;
     font-weight: bold;
-}
+} */
 
 .allergen {
     font-weight: bold;

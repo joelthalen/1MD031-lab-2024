@@ -1,8 +1,20 @@
 <template>
     <div id="orders">
       <div id="orderList">
-        <div v-for="(order, key) in orders" v-bind:key="'order'+key">
-          #{{ key }}: {{ order.orderItems.join(", ") }}
+        <div v-for="(order, key, index) in orders" v-bind:key="'order'+key">
+          <div id="orderTitle">
+            #{{ index + 1 }}: {{ Object.keys(order.orderItems).join(", ") }}
+          </div>
+
+          <div id="orderInfo">
+            <i>
+              {{ order.orderContact.fullName }}
+              ({{ order.orderContact.emailName }},
+              {{ order.orderContact.payM }},
+              {{ order.orderContact.gender }})
+            </i>
+          </div>
+
         </div>
         <button v-on:click="clearQueue">Clear Queue</button>
       </div>
@@ -28,6 +40,7 @@
       socket.on('currentQueue', data =>
         this.orders = data.orders);
     },
+
     methods: {
       clearQueue: function () {
         socket.emit('clearQueue');

@@ -1,21 +1,24 @@
 [{
-    "name": "Veggie Bliss", 
+    "name": "Vanlig burgare", 
     "kCal": 500, 
-    "url": "https://images-bonnier.imgix.net/files/ifo/production/20220412084608/Kødfri-burger-1.jpg?auto=compress,format&w=1024%201024w",
-    "lactose": false, 
-    "gluten": false
+    "image": "../public/img/burgare1.webp",
+    "lactose": true, 
+    "gluten": true,
+    "ingredients": ["Kött", "Ost","Grönsaker"]
 },
 {
-    "name": "Veggie Bliss", 
-    "kCal": 500, 
-    "url": "https://images-bonnier.imgix.net/files/ifo/production/20220412084608/Kødfri-burger-1.jpg?auto=compress,format&w=1024%201024w",
+    "name": "Fiskburgare", 
+    "kCal": 400, 
+    "image": "../public/img/fiskburgare.jpg",
     "lactose": false, 
-    "gluten": false
+    "gluten": true,
+    "ingredients": ["Fisk", "Grönsaker"]
 },
 {
-    "name": "Veggie Bliss", 
-    "kCal": 500, 
-    "url": "https://images-bonnier.imgix.net/files/ifo/production/20220412084608/Kødfri-burger-1.jpg?auto=compress,format&w=1024%201024w",
+    "name": "Bara kött", 
+    "kCal": 300, 
+    "image": "../public/img/burgarkött.jpg",
     "lactose": false, 
-    "gluten": false
+    "gluten": false,
+    "ingredients": ["Kött", "Fryst"]
 }]
