@@ -136,7 +136,6 @@ export default {
                                 
                               }
                  );
-        console.log(this.orderedContact)
     },
 
     addToOrder: function (event) {
