@@ -19,8 +19,8 @@
         <button v-on:click="clearQueue">Clear Queue</button>
       </div>
       <div id="dots">
-          <div v-for="(order, key) in orders" v-bind:style="{ left: order.details.x + 'px', top: order.details.y + 'px'}" v-bind:key="'dots' + key">
-            {{ key }}
+          <div v-for="(order, key, index) in orders" v-bind:style="{ left: order.details.x + 'px', top: order.details.y + 'px'}" v-bind:key="'dots' + key">
+            {{ index + 1 }}
           </div>
       </div>
     </div>
